@@ -2,17 +2,18 @@
 # -*- code: utf-8 -*-
 """ Blood Pressure Monitor"""
 
-BP_STATUS = raw_input('What is your blood pressure? ')
+BP_STATUS = int(raw_input('What is your blood pressure? '))
 
-if  BP_STATUS <= 89:
-    print 'LOW!'
-if 90 >= BP_STATUS <= 119:
-     print 'IDEAL!'
-if 120 >= BP_STATUS <= 129:
-    print 'WARNING!'
-if 140 >= BP_STATUS <= 159:
-    print 'HIGH!'
-if 159 > BP_STATUS >= 160:
-    print 'EMERGENCY!'
-    
+
+if BP_STATUS <= 89:
+    print 'Low'
+elif BP_STATUS <= 119:
+    print 'Ideal'
+elif BP_STATUS <= 139:
+    print 'Warning'
+elif BP_STATUS <= 159:
+    print 'High'
+else:
+    print 'Emergency'
+
 print 'You status if currently:{}'.format(BP_STATUS)
