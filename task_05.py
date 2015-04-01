@@ -1,19 +1,20 @@
-#!usr\env\bin\ python
-# -*- code: utf-8 -*-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 """ Blood Pressure Monitor"""
+
 
 BP_STATUS = int(raw_input('What is your blood pressure? '))
 
 
 if BP_STATUS <= 89:
-    print 'Low'
-elif BP_STATUS <= 119:
-    print 'Ideal'
-elif BP_STATUS <= 139:
-    print 'Warning'
-elif BP_STATUS <= 159:
-    print 'High'
+    BP_STATUS = 'Low'
+elif int(BP_STATUS) <= 119:
+    BP_STATUS = 'Ideal'
+elif int(BP_STATUS) <= 139:
+    BP_STATUS = 'Warning'
+elif int(BP_STATUS) <= 159:
+    BP_STATUS = 'High'
 else:
-    print 'Emergency'
+    BP_STATUS = 'Emergency'
 
-print 'You status if currently:{}'.format(BP_STATUS)
+print 'You status is currently:{}!'.format(BP_STATUS)

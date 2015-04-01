@@ -1,5 +1,5 @@
-#!usr\env\bin\ python
-# -*- code: utf-8 -*-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 """Ask question and store result as interger"""
 
-MY_INTERGER = int(raw_input('How old are you today? '))
+MY_INTEGER = int(raw_input('How old are you today? '))
